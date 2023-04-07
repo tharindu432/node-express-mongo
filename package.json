@@ -4,7 +4,7 @@
   "description": "this is node js course",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon main.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/tharindu432/node-express-mongo#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^5.2.0",
     "nodemon": "^2.0.22"
   }
 }
