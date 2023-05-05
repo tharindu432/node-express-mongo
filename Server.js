@@ -1,7 +1,44 @@
 const os=require('os')
 const path=require('path')
 const math=require('./math')
-const fs=require('fs')
+//const fs=require('fs')
+const fsPromises= require('fs').promises;
+const {format} = require('date-fns');
+const {v4:uuid}= require('uuid');
+const logEvents=require('./logEvents');
+const EventEmitter=require('events');
+
+class myEmitter extends EventEmitter{};
+
+//intialize an object
+const myEmitter1=new myEmitter();
+
+//add listner for the log event
+myEmitter1.on('log',(msg)=>logEvents(msg));
+
+setTimeout(()=>{
+    //emit event
+    myEmitter1.emit('log','log event emitted!');
+},2000);
+
+
+
+
+
+console.log(format(new Date(),'yyyyMMdd\tHH:mm:ss'))
+
+console.log(uuid());
+
+const fileops=async()=>{
+    try{
+        const data= await fsPromises.readFile('./reply.txt','utf8');
+        console.log(data);
+    }catch(err){
+        console.error(err);
+    }
+}
+
+fileops();
 
 
 
@@ -16,6 +53,9 @@ console.log(__filename)
 
 console.log(path.parse(__filename))
 */
+
+
+/*
 
 console.log(math.add(1,2))
 console.log(math.div(4,5))
@@ -56,4 +96,4 @@ process.on('uncaughtException',err=>{
 
 
 
-
+*/
