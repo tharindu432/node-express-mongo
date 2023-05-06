@@ -4,3 +4,7 @@
 20230505	19:21:01	11699331-7bcd-4bad-b89b-43b0445aff59	log event emitted!
 20230505	19:22:24	36aa70bd-cdcf-4f0e-b1e8-92bb8ca33077	log event emitted!
 20230505	22:22:41	990713a3-2c9e-4bd3-b086-1c8efe63a949	log event emitted!
+20230506	14:21:04	fb4ac397-10e6-4965-981f-d27b1fcaf5b5	GET	 undefined	/index
+20230506	14:22:42	e28ff3a3-a0f1-4442-b23a-10632d8f8253	GET	 undefined	/index
+20230506	14:22:49	a163903a-301c-45b5-a998-122ce7b01829	GET	 undefined	/infguy
+20230506	14:34:30	6cbf6e0d-f561-4551-94bc-a845c3b77ee5	GET	 undefined	/

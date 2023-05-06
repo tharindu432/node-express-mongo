@@ -5,7 +5,7 @@ const math=require('./math')
 const fsPromises= require('fs').promises;
 const {format} = require('date-fns');
 const {v4:uuid}= require('uuid');
-const logEvents=require('./logEvents');
+const logEvents=require('./middleware/logEvents');
 const EventEmitter=require('events');
 
 class myEmitter extends EventEmitter{};
